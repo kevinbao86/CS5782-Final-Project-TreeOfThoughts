@@ -48,13 +48,18 @@ IO	9.2%
 CoT	12%
 ToT	85%
 Our results support the paper’s main trend: ToT improves performance by searching over multiple candidate reasoning paths. The closest reproduction was Game of 24, while Creative Writing was more sensitive to prompt formatting and evaluator reliability.
+
 7. Conclusion
 Tree of Thoughts was most effective on tasks with clear intermediate states, such as Game of 24 and Sudoku.
 Our reimplementation showed that ToT can improve reasoning without fine-tuning, but also highlighted practical challenges in prompt transfer, output parsing, model choice, and subjective evaluation.
+
+
 8. References
 Yao, S., Yu, D., Zhao, J., Shafran, I., Griffiths, T. L., Cao, Y., & Narasimhan, K. (2023). Tree of Thoughts: Deliberate Problem Solving with Large Language Models. arXiv:2305.10601.
 Princeton NLP. Tree of Thoughts. https://github.com/princeton-nlp/tree-of-thought-llm
 Black-Phoenix. 4x4 Sudoku Dataset. https://github.com/Black-Phoenix/4x4-Sudoku-Dataset
+
+
 9. Acknowledgements
 This project was completed as part of CS 4782/5782 at Cornell University.
 We acknowledge the authors of the Tree of Thoughts paper and the Princeton NLP ToT repository, which provided the original framework and task setup that our project builds on.

@@ -27,23 +27,23 @@ pip install -r requirements.txt
 ```
 Run Game of 24 experiments:
 ```bash
-python sh './code/scripts/game24/standard_sampling.sh'
-python sh './code/scripts/game24/cot_sampling.sh'
-python sh './code/scripts/game24/bfs.sh'
+sh './code/scripts/game24/standard_sampling.sh'
+sh './code/scripts/game24/cot_sampling.sh'
+sh './code/scripts/game24/bfs.sh'
 ```
 
 Run Creative Writing:
 ```bash
-python sh './code/scripts/text/standard_sampling.sh'
-python sh './code/scripts/text/cot_sampling.sh'
-python sh './code/scripts/text/bfs.sh'
+sh './code/scripts/text/standard_sampling.sh'
+sh './code/scripts/text/cot_sampling.sh'
+sh './code/scripts/text/bfs.sh'
 ```
 
 Run Sudoku Writing:
 ```bash
-python sh './code/scripts/sudoku/standard_sampling.sh'
-python sh './code/scripts/sudoku/cot_sampling.sh'
-python sh './code/scripts/sudoku/dfs.sh'
+sh './code/scripts/sudoku/standard_sampling.sh'
+sh './code/scripts/sudoku/cot_sampling.sh'
+sh './code/scripts/sudoku/dfs.sh'
 ```
 Recommended compute: a CUDA-enabled GPU with enough VRAM for a quantized Qwen3.6-28B GGUF model. Our runs used an A100-class GPU environment.
 

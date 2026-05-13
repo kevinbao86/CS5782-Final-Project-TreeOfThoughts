@@ -62,6 +62,6 @@ Princeton NLP. Tree of Thoughts. https://github.com/princeton-nlp/tree-of-though
 Black-Phoenix. 4x4 Sudoku Dataset. https://github.com/Black-Phoenix/4x4-Sudoku-Dataset
 
 
-9. Acknowledgements
+9. Acknowledgements:
 This project was completed as part of CS 4782/5782 at Cornell University.
 We acknowledge the authors of the Tree of Thoughts paper and the Princeton NLP ToT repository, which provided the original framework and task setup that our project builds on.

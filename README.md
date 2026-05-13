@@ -27,15 +27,23 @@ pip install -r requirements.txt
 ```
 Run Game of 24 experiments:
 ```bash
-python run.py --task game24 --task_start_index 0 --task_end_index 100 --naive_run --prompt_sample standard
-python run.py --task game24 --task_start_index 0 --task_end_index 100 --naive_run --prompt_sample cot
-python run.py --task game24 --task_start_index 0 --task_end_index 100 --method_generate propose --method_evaluate value --method_select greedy --n_generate_sample 1 --n_evaluate_sample 3 --n_select_sample 5
+python sh './code/scripts/game24/standard_sampling.sh'
+python sh './code/scripts/game24/cot_sampling.sh'
+python sh './code/scripts/game24/bfs.sh'
 ```
+
 Run Creative Writing:
 ```bash
-python run.py --task text --task_start_index 0 --task_end_index 50 --method_generate sample --method_evaluate vote --method_select greedy --n_generate_sample 5 --n_evaluate_sample 5 --n_select_sample 1 --prompt_sample cot --temperature 1.0
-python run.py --task text --task_start_index 0 --task_end_index 50 --naive_run --prompt_sample standard --n_generate_sample 10 --temperature 1.0
-python run.py --task text --task_start_index 0 --task_end_index 50 --naive_run --prompt_sample cot --n_generate_sample 10 --temperature 1.0
+python sh './code/scripts/text/standard_sampling.sh'
+python sh './code/scripts/text/cot_sampling.sh'
+python sh './code/scripts/text/bfs.sh'
+```
+
+Run Sudoku Writing:
+```bash
+python sh './code/scripts/sudoku/standard_sampling.sh'
+python sh './code/scripts/sudoku/cot_sampling.sh'
+python sh './code/scripts/sudoku/dfs.sh'
 ```
 Recommended compute: a CUDA-enabled GPU with enough VRAM for a quantized Qwen3.6-28B GGUF model. Our runs used an A100-class GPU environment.
 

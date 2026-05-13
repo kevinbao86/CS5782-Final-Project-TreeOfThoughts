@@ -66,9 +66,9 @@ Our reimplementation showed that ToT can improve reasoning without fine-tuning, 
 
 
 8. References:
-Yao, S., Yu, D., Zhao, J., Shafran, I., Griffiths, T. L., Cao, Y., & Narasimhan, K. (2023). Tree of Thoughts: Deliberate Problem Solving with Large Language Models. arXiv:2305.10601.
-Princeton NLP. Tree of Thoughts. https://github.com/princeton-nlp/tree-of-thought-llm
-Black-Phoenix. 4x4 Sudoku Dataset. https://github.com/Black-Phoenix/4x4-Sudoku-Dataset
+- Yao, S., Yu, D., Zhao, J., Shafran, I., Griffiths, T. L., Cao, Y., & Narasimhan, K. (2023). Tree of Thoughts: Deliberate Problem Solving with Large Language Models. arXiv:2305.10601.
+- Princeton NLP. Tree of Thoughts. https://github.com/princeton-nlp/tree-of-thought-llm
+- Black-Phoenix. 4x4 Sudoku Dataset. https://github.com/Black-Phoenix/4x4-Sudoku-Dataset
 
 
 9. Acknowledgements:

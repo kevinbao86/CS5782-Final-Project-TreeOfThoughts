@@ -34,21 +34,30 @@ Recommended compute: a CUDA-enabled GPU with enough VRAM for a quantized Qwen3.6
 
 
 6. Results / Insights:
-Game of 24
-Method	Ours	Paper
-IO	6.8%	7.3%
-CoT	3.1%	4.0%
-ToT, b=5	67%	74%
-Creative Writing
-Method	Ours	Paper
-IO	1.58	6.19
-CoT	3.04	6.93
-ToT, b=5	4.04	7.56
-4x4 Sudoku Extension
-Method	Success %
-IO	9.2%
-CoT	12%
-ToT	85%
+### Game of 24 Results
+
+| Method | Success % (Ours) | Success % (Paper) |
+|---|---:|---:|
+| IO | 6.8 | 7.3 |
+| CoT | 3.1 | 4.0 |
+| ToT (b = 5) | 67 | 74 |
+
+### Game of 24 Results
+
+| Method | Success % (Ours) | Success % (Paper) |
+|---|---:|---:|
+| IO | 6.8 | 7.3 |
+| CoT | 3.1 | 4.0 |
+| ToT (b = 5) | 67 | 74 |
+
+### 4x4 Sudoku Results
+
+| Method | Success % |
+|---|---:|
+| IO | 9.2 |
+| CoT | 12 |
+| ToT | 85 |
+
 Our results support the paper’s main trend: ToT improves performance by searching over multiple candidate reasoning paths. The closest reproduction was Game of 24, while Creative Writing was more sensitive to prompt formatting and evaluator reliability.
 
 7. Conclusion:

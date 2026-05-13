@@ -31,6 +31,7 @@ Run Creative Writing ToT using the paper-style settings:
 python run.py --task text --task_start_index 0 --task_end_index 50 --method_generate sample --method_evaluate vote --method_select greedy --n_generate_sample 5 --n_evaluate_sample 5 --n_select_sample 1 --prompt_sample cot --temperature 1.0
 ```
 Recommended compute: a CUDA-enabled GPU with enough VRAM for a quantized Qwen3.6-28B GGUF model. Our runs used an A100-class GPU environment.
+
 6. Results / Insights
 Game of 24
 Method	Ours	Paper

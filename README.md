@@ -31,7 +31,7 @@ python run.py --task game24 --task_start_index 0 --task_end_index 100 --naive_ru
 python run.py --task game24 --task_start_index 0 --task_end_index 100 --naive_run --prompt_sample cot
 python run.py --task game24 --task_start_index 0 --task_end_index 100 --method_generate propose --method_evaluate value --method_select greedy --n_generate_sample 1 --n_evaluate_sample 3 --n_select_sample 5
 ```
-Run Creative Writing ToT using the paper-style settings:
+Run Creative Writing:
 ```bash
 python run.py --task text --task_start_index 0 --task_end_index 50 --method_generate sample --method_evaluate vote --method_select greedy --n_generate_sample 5 --n_evaluate_sample 5 --n_select_sample 1 --prompt_sample cot --temperature 1.0
 python run.py --task text --task_start_index 0 --task_end_index 50 --naive_run --prompt_sample standard --n_generate_sample 10 --temperature 1.0

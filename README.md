@@ -42,13 +42,13 @@ Recommended compute: a CUDA-enabled GPU with enough VRAM for a quantized Qwen3.6
 | CoT | 3.1 | 4.0 |
 | ToT (b = 5) | 67 | 74 |
 
-### Game of 24 Results
+### Creative Writing Results
 
-| Method | Success % (Ours) | Success % (Paper) |
+| Method | Coherency Score (Ours) | Coherency Score (Paper) |
 |---|---:|---:|
-| IO | 6.8 | 7.3 |
-| CoT | 3.1 | 4.0 |
-| ToT (b = 5) | 67 | 74 |
+| IO | 1.58 | 6.19 |
+| CoT | 3.04 | 6.93 |
+| ToT (b = 5) | 4.04 | 7.56 |
 
 ### 4x4 Sudoku Results
 

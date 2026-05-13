@@ -32,6 +32,7 @@ python run.py --task text --task_start_index 0 --task_end_index 50 --method_gene
 ```
 Recommended compute: a CUDA-enabled GPU with enough VRAM for a quantized Qwen3.6-28B GGUF model. Our runs used an A100-class GPU environment.
 
+
 6. Results / Insights
 Game of 24
 Method	Ours	Paper

@@ -1,0 +1,84 @@
+import os
+import json
+import argparse
+
+from tot.tasks import get_task
+
+
+def get_solver(search_method):
+    if search_method == 'dfs':
+        from tot.methods.dfs import solve, naive_solve
+    elif search_method == 'bfs':
+        from tot.methods.bfs import solve, naive_solve
+    else:
+        raise ValueError(f'search_method {search_method} not recognized')
+    return solve, naive_solve
+
+def run(args):
+    task = get_task(args.task)
+    solve, naive_solve = get_solver(args.search_method)
+    logs, cnt_avg, cnt_any = [], 0, 0
+    if args.naive_run:
+        file = f'./logs/{args.task}/{args.temperature}_naive_{args.prompt_sample}_sample_{args.n_generate_sample}_start{args.task_start_index}_end{args.task_end_index}.json'
+    else:
+        search_prefix = '' if args.search_method == 'bfs' else f'{args.search_method}_'
+        fallback_suffix = ''
+        if args.search_method == 'dfs' and args.fallback_evaluate != 'model':
+            fallback_suffix = f'_fallback{args.fallback_evaluate}'
+        file = f'./logs/{args.task}/{args.temperature}_{search_prefix}{args.method_generate}{args.n_generate_sample}_{args.method_evaluate}{args.n_evaluate_sample}_{args.method_select}{args.n_select_sample}{fallback_suffix}_start{args.task_start_index}_end{args.task_end_index}.json'
+    os.makedirs(os.path.dirname(file), exist_ok=True)
+
+    for i in range(args.task_start_index, args.task_end_index):
+        # solve
+        if args.naive_run:
+            ys, info = naive_solve(args, task, i) 
+        else:
+            ys, info = solve(args, task, i)
+
+        # log
+        infos = [task.test_output(i, y) for y in ys]
+        info.update({'idx': i, 'ys': ys, 'infos': infos})
+        logs.append(info)
+        with open(file, 'w') as f:
+            json.dump(logs, f, indent=4)
+        
+        # log main metric
+        accs = [info['r'] for info in infos]
+        cnt_avg += sum(accs) / len(accs)
+        cnt_any += any(accs)
+        print(i, 'sum(accs)', sum(accs), 'cnt_avg', cnt_avg, 'cnt_any', cnt_any, '\n')
+    
+    n = args.task_end_index - args.task_start_index
+    print(cnt_avg / n, cnt_any / n)
+
+
+def parse_args():
+    args = argparse.ArgumentParser()
+    args.add_argument('--temperature', type=float, default=0.7)
+
+    args.add_argument('--task', type=str, required=True, choices=['game24', 'text', 'crosswords', 'sudoku', 'sudoku4x4'])
+    args.add_argument('--task_start_index', type=int, default=900)
+    args.add_argument('--task_end_index', type=int, default=1000)
+
+    args.add_argument('--naive_run', action='store_true')
+    args.add_argument('--prompt_sample', type=str, choices=['standard', 'cot'])  # only used when method_generate = sample, or naive_run
+
+    args.add_argument('--search_method', type=str, choices=['bfs', 'dfs'], default='bfs')
+    args.add_argument('--method_generate', type=str, choices=['sample', 'propose'])
+    args.add_argument('--method_evaluate', type=str, choices=['value', 'vote'])
+    args.add_argument('--method_select', type=str, choices=['sample', 'greedy'], default='greedy')
+    args.add_argument('--n_generate_sample', type=int, default=1)  # only thing needed if naive_run
+    args.add_argument('--n_evaluate_sample', type=int, default=1)
+    args.add_argument('--n_select_sample', type=int, default=1)
+    args.add_argument('--dfs_max_depth', type=int, default=None)
+    args.add_argument('--dfs_max_nodes', type=int, default=None)
+    args.add_argument('--fallback_evaluate', type=str, choices=['model', 'local'], default='model')
+
+    args = args.parse_args()
+    return args
+
+
+if __name__ == '__main__':
+    args = parse_args()
+    print(args)
+    run(args)

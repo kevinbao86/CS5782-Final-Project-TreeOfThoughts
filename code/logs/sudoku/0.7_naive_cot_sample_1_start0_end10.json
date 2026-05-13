@@ -1,0 +1,132 @@
+[
+    {
+        "idx": 0,
+        "ys": [
+            "<think>\n\n</think>\n\nSteps:\nBoard:\n0 3 2 1\n0 0 3 0\n0 4 0 0\n2 1 0 0\nFill the missing cells while keeping the given digits fixed.\nSolved board:\n4 3 2 1\n1 2 3 4\n3 4 1 2\n2 1 4 3\nAnswer: 4321123434122143"
+        ],
+        "infos": [
+            {
+                "r": 1,
+                "r_valid": 1,
+                "solution": "4321123434122143"
+            }
+        ]
+    },
+    {
+        "idx": 1,
+        "ys": [
+            "<think>\n\n</think>\n\nSteps:\nBoard:\n1 4 0 0\n0 0 0 0\n3 2 1 0\n4 0 2 0\nFill the missing cells while keeping the given digits fixed.\nSolved board:\n1 4 3 2\n2 3 4 1\n3 2 1 4\n4 1 2 3\nAnswer: 1432234132144123"
+        ],
+        "infos": [
+            {
+                "r": 1,
+                "r_valid": 1,
+                "solution": "1432234132144123"
+            }
+        ]
+    },
+    {
+        "idx": 2,
+        "ys": [
+            "<think>\nThe user wants me to solve a 4x4 Sudoku puzzle.\n\n**Input Format:**\nA 16-character string representing the board row by row. '0' represents an empty cell.\nDigits allowed: 1, 2, 3, 4.\nConstraints:\n1. Each row must contain 1, 2, 3, 4 exactly once.\n2. Each column must contain 1, 2, 3, 4 exactly once.\n3. Each 2x2 box must contain 1, 2, 3, 4 exactly once.\n\n**Puzzle to Solve:**\nString: `0010000402"
+        ],
+        "infos": [
+            {
+                "r": 0,
+                "r_valid": 0,
+                "solution": "0010000402400421"
+            }
+        ]
+    },
+    {
+        "idx": 3,
+        "ys": [
+            "<think>\nThe user wants me to solve a 4x4 Sudoku puzzle.\n\n**Input Puzzle:** `0300210000011043`\n\n**Steps:**\n1.  **Parse the input string into a 4x4 grid.**\n    The string is 16 characters long.\n    Row 1: `0300`\n    Row 2: `2100`\n    Row 3: `0001`\n    Row 4: `1043`\n\n    Let's represent the board:\n    R1: [0, 3, 0, 0]\n    R2: ["
+        ],
+        "infos": [
+            {
+                "r": 0,
+                "r_valid": 0,
+                "solution": "0300210000011043"
+            }
+        ]
+    },
+    {
+        "idx": 4,
+        "ys": [
+            "<think>\nThe user wants me to solve a 4x4 Sudoku puzzle.\nThe puzzle is given as a 16-character string: `0102203040001020`.\nI need to follow the format of the examples provided.\n\n**Input Puzzle:** `0102203040001020`\n\n**Step 1: Parse the string into a 4x4 grid.**\nThe string is 16 characters long.\nRow 1: characters 0-3 -> `0 1 0 2`\nRow 2: characters 4-7 -> `2 0 3 0`\n"
+        ],
+        "infos": [
+            {
+                "r": 0,
+                "r_valid": 0,
+                "solution": "0102203040001020"
+            }
+        ]
+    },
+    {
+        "idx": 5,
+        "ys": [
+            "<think>\nThe user wants me to solve a 4x4 Sudoku puzzle.\n\n**Input Puzzle:** `0132030100001020`\n\n**Format:**\n- 4x4 grid.\n- 0 represents empty cells.\n- Digits 1, 2, 3, 4.\n- Constraints: Each row, column, and 2x2 box must contain 1, 2, 3, 4 exactly once.\n\n**Parsing the input string:**\nString length: 16 characters.\nRow 1: `0 1 3 2`\nRow 2: `0 3 0 1`"
+        ],
+        "infos": [
+            {
+                "r": 0,
+                "r_valid": 0,
+                "solution": "0132030100001020"
+            }
+        ]
+    },
+    {
+        "idx": 6,
+        "ys": [
+            "<think>\n\n</think>\n\nSteps:\nBoard:\n1 4 0 0\n0 2 0 0\n0 0 4 3\n4 0 2 0\n\nLet's solve the puzzle step-by-step.\n\n**Initial Board:**\n```\nR1: 1 4 . .\nR2: . 2 . .\nR3: . . 4 3\nR4: 4 . 2 .\n```\n\n**Step 1: Analyze Row 1**\nRow 1 has `1` and `4`. Missing are `2` and `3`.\nCells are R1C3 and R1C4.\nCheck Column 3"
+        ],
+        "infos": [
+            {
+                "r": 0,
+                "r_valid": 0,
+                "solution": "1400020000434020"
+            }
+        ]
+    },
+    {
+        "idx": 7,
+        "ys": [
+            "<think>\n\n</think>\n\nSteps:\nBoard:\n0 0 0 0\n4 3 0 2\n0 4 3 0\n0 1 0 4\n\nFill the missing cells while keeping the given digits fixed.\n\n1.  **Analyze Row 2**: `4 3 0 2`. The missing digit is 1. So, R2C3 = 1.\n    Board:\n    0 0 0 0\n    4 3 1 2\n    0 4 3 0\n    0 1 0 4\n\n2.  **Analyze Column 3**: `0 1 "
+        ],
+        "infos": [
+            {
+                "r": 0,
+                "r_valid": 0,
+                "solution": "0000431204300104"
+            }
+        ]
+    },
+    {
+        "idx": 8,
+        "ys": [
+            "<think>\n\n</think>\n\nSteps:\nBoard:\n1 2 0 0\n3 4 0 1\n0 1 4 0\n0 0 0 0\nFill the missing cells while keeping the given digits fixed.\nSolved board:\n1 2 4 3\n3 4 2 1\n2 1 4 3 -> Wait, Row 3 is `0 1 4 0`. The missing digits are 2 and 3.\nLet's re-solve carefully.\n\nInitial Board:\nR1: 1 2 . .\nR2: 3 4 . 1\nR3: . 1 4"
+        ],
+        "infos": [
+            {
+                "r": 0,
+                "r_valid": 0,
+                "solution": "1200340101400000"
+            }
+        ]
+    },
+    {
+        "idx": 9,
+        "ys": [
+            "<think>\nThe user wants me to solve a 4x4 Sudoku puzzle.\n\n**Input Puzzle:** `2000030204001203`\n\n**Parsing the input:**\nThe string is 16 characters long.\nRow 1: `2 0 0 0`\nRow 2: `0 3 0 2`\nRow 3: `0 4 0 0`\nRow 4: `1 2 0 3`\n\nLet's verify the indices.\nIndex 0-3: `2 0 0 0` -> Row 1\nIndex 4-7: `0 3 "
+        ],
+        "infos": [
+            {
+                "r": 0,
+                "r_valid": 0,
+                "solution": "2000030204001203"
+            }
+        ]
+    }
+]

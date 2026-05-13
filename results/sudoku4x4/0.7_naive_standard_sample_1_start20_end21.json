@@ -1,0 +1,17 @@
+[
+    {
+        "idx": 20,
+        "ys": [
+            "<think>\nThe user wants me to solve a 4x4 Sudoku puzzle.\n\n**Rules:**\n1. Grid size: 4x4.\n2. Digits: 1, 2, 3, 4.\n3. Constraints:\n   - Each row must contain 1, 2, 3, 4 exactly once.\n   - Each column must contain 1, 2, 3, 4 exactly once.\n   - Each 2x2 box must contain 1, 2, 3, 4 exactly once.\n   - Boxes are:\n     - Top-Left: (0,0), (0,1), (1,0), ("
+        ],
+        "infos": [
+            {
+                "r": 0,
+                "r_valid": 0,
+                "solution": "3120020300000041",
+                "solution_board": "3 1 2 0\n0 2 0 3\n0 0 0 0\n0 0 4 1",
+                "reason": ""
+            }
+        ]
+    }
+]

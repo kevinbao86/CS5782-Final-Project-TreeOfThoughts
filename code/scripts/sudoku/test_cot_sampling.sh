@@ -1,0 +1,7 @@
+python run.py \
+    --task sudoku4x4 \
+    --task_start_index 20 \
+    --task_end_index 21 \
+    --naive_run \
+    --prompt_sample cot \
+    --n_generate_sample 1

@@ -1,0 +1,132 @@
+[
+    {
+        "idx": 0,
+        "ys": [
+            "<think>\n\n</think>\n\n4321123434122143"
+        ],
+        "infos": [
+            {
+                "r": 1,
+                "r_valid": 1,
+                "solution": "4321123434122143"
+            }
+        ]
+    },
+    {
+        "idx": 1,
+        "ys": [
+            "<think>\nThe user wants me to solve a 4x4 Sudoku puzzle.\n\n**Rules:**\n1. Grid size: 4x4.\n2. Numbers used: 1, 2, 3, 4.\n3. Constraints:\n    - Each row must contain 1, 2, 3, 4 exactly once.\n    - Each column must contain 1, 2, 3, 4 exactly once.\n    - Each 2x2 box must contain 1, 2, 3, 4 exactly once.\n4. Input format: 16-character string, '0' represents an empty cell.\n5. Output format: 16"
+        ],
+        "infos": [
+            {
+                "r": 0,
+                "r_valid": 0,
+                "solution": "1400000032104020"
+            }
+        ]
+    },
+    {
+        "idx": 2,
+        "ys": [
+            "<think>\nThe user wants me to solve a 4x4 Sudoku puzzle.\nThe input format is a 16-character string where '0' represents an empty cell.\nThe digits allowed are 1, 2, 3, 4.\nConstraints:\n1. Each row contains 1, 2, 3, 4 exactly once.\n2. Each column contains 1, 2, 3, 4 exactly once.\n3. Each 2x2 box contains 1, 2, 3, 4 exactly once.\n\nThe specific puzzle to solve is: `0010000402400421`\n\nLet's break"
+        ],
+        "infos": [
+            {
+                "r": 0,
+                "r_valid": 0,
+                "solution": "0010000402400421"
+            }
+        ]
+    },
+    {
+        "idx": 3,
+        "ys": [
+            "<think>\nThe user wants me to solve a 4x4 Sudoku puzzle.\n\n**Rules:**\n1. Grid size: 4x4.\n2. Symbols: 1, 2, 3, 4.\n3. Constraints:\n    - Each row contains 1-4 exactly once.\n    - Each column contains 1-4 exactly once.\n    - Each 2x2 subgrid (box) contains 1-4 exactly once.\n4. Input format: 16-character string, 0 represents empty.\n5. Output format: 16-character string representing the solved board.\n\n**Input Puzzle:**\n`0300210000"
+        ],
+        "infos": [
+            {
+                "r": 0,
+                "r_valid": 0,
+                "solution": "0300210000011043"
+            }
+        ]
+    },
+    {
+        "idx": 4,
+        "ys": [
+            "<think>\nThe user wants me to solve a 4x4 Sudoku puzzle.\n\n**Rules:**\n- Grid size: 4x4.\n- Digits: 1, 2, 3, 4.\n- Constraints:\n  - Each row contains 1, 2, 3, 4 exactly once.\n  - Each column contains 1, 2, 3, 4 exactly once.\n  - Each 2x2 box contains 1, 2, 3, 4 exactly once.\n- Input format: 16-character string, '0' for empty.\n- Output format: 16-character string representing the solved board.\n\n**Input"
+        ],
+        "infos": [
+            {
+                "r": 0,
+                "r_valid": 0,
+                "solution": "0102203040001020"
+            }
+        ]
+    },
+    {
+        "idx": 5,
+        "ys": [
+            "<think>\nHere's a thinking process:\n\n1.  **Analyze User Input:**\n   - Input format: 16-character string representing a 4x4 Sudoku grid row by row.\n   - '0' represents empty cells.\n   - Digits to use: 1, 2, 3, 4.\n   - Constraints: Each row, column, and 2x2 box must contain 1-4 exactly once.\n   - Output format: Only the solved 16-character string.\n   - Given puzzle: `0132030100001020`\n\n2.  **Parse the Puzzle:**\n   Convert the string to"
+        ],
+        "infos": [
+            {
+                "r": 0,
+                "r_valid": 0,
+                "solution": "0132030100001020"
+            }
+        ]
+    },
+    {
+        "idx": 6,
+        "ys": [
+            "<think>\nThe user wants me to solve a 4x4 Sudoku puzzle.\nThe input is a 16-character string representing the grid row by row.\n'0' represents an empty cell.\nDigits '1', '2', '3', '4' are used.\nConstraints:\n- Each row contains 1-4 exactly once.\n- Each column contains 1-4 exactly once.\n- Each 2x2 subgrid contains 1-4 exactly once.\n\nInput Puzzle: `1400020000434020`\n\nLet's break down the grid:\nRow 0: 1, 4, 0, 0\n"
+        ],
+        "infos": [
+            {
+                "r": 0,
+                "r_valid": 0,
+                "solution": "1400020000434020"
+            }
+        ]
+    },
+    {
+        "idx": 7,
+        "ys": [
+            "<think>\nThe user wants me to solve a 4x4 Sudoku puzzle.\n\n**Rules:**\n1.  Grid size: 4x4.\n2.  Digits: 1, 2, 3, 4.\n3.  Constraints:\n    *   Each row contains 1-4 exactly once.\n    *   Each column contains 1-4 exactly once.\n    *   Each 2x2 subgrid (box) contains 1-4 exactly once.\n4.  Input format: 16-character string, '0' for empty cells.\n5.  Output format: 16-character string representing the solved board.\n\n**Input Puzzle:**\n"
+        ],
+        "infos": [
+            {
+                "r": 0,
+                "r_valid": 0,
+                "solution": "0000430204300104"
+            }
+        ]
+    },
+    {
+        "idx": 8,
+        "ys": [
+            "<think>\n\n</think>\n\n1243342141322314"
+        ],
+        "infos": [
+            {
+                "r": 0,
+                "r_valid": 0,
+                "solution": "1243342141322314"
+            }
+        ]
+    },
+    {
+        "idx": 9,
+        "ys": [
+            "<think>\nThe user wants me to solve a 4x4 Sudoku puzzle.\n\n**Rules:**\n- Grid size: 4x4\n- Digits: 1, 2, 3, 4\n- Constraints:\n  - Each row contains 1, 2, 3, 4 exactly once.\n  - Each column contains 1, 2, 3, 4 exactly once.\n  - Each 2x2 box contains 1, 2, 3, 4 exactly once.\n- Input format: 16-character string (0 for empty).\n- Output format: Solved 16-character string.\n\n**Input Puzzle:** `200"
+        ],
+        "infos": [
+            {
+                "r": 0,
+                "r_valid": 0,
+                "solution": "2000030204001203"
+            }
+        ]
+    }
+]

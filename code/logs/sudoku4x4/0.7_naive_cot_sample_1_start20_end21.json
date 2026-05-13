@@ -1,0 +1,17 @@
+[
+    {
+        "idx": 20,
+        "ys": [
+            "<think>\n\n</think>\n\nr1c4 = 4 - Row 1 missing only 4.\nr2c1 = 1 - Column 1 missing 1, 4; r3c1, r4c1 conflict with row/box constraints, r2c1=1 fits.\nr2c3 = 4 - Row 2 missing only 4.\nr3c1 = 4 - Column 1 missing only 4.\nr4c1 = 2 - Column 1 missing only 2.\nr4c2 = 3 - Row 4 missing only 3.\nr3c2 = 1 - Column 2 missing only 1.\nr3c3 = 2 - Row 3 missing 2, 3; r3c3=2 allows r3c4=3.\nr3c4 = 3 - Row 3 missing only 3.\n\nOutput:\n3 1 2 4\n1 2 4 3\n4 1 2 3\n2 3 4 1"
+        ],
+        "infos": [
+            {
+                "r": 0,
+                "r_valid": 0,
+                "solution": "3124124341232341",
+                "solution_board": "3 1 2 4\n1 2 4 3\n4 1 2 3\n2 3 4 1",
+                "reason": "duplicate digit in a row, column, or box"
+            }
+        ]
+    }
+]

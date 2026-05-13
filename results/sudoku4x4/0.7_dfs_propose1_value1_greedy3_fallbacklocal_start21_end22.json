@@ -1,0 +1,239 @@
+[
+    {
+        "steps": [
+            {
+                "depth": 0,
+                "x": ". . 3 .\n. . . 2\n. 3 . 1\n. 1 2 3",
+                "y": "",
+                "new_ys": [
+                    "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\n",
+                    "r2c1 = 1 - Row 2 is missing 1 and 4; column 1 already has 4 (in r4c1), so only 1 fits.\n",
+                    "r2c2 = 4 - Row 2 is missing 1 and 4; column 2 already has 1\n"
+                ],
+                "values": [
+                    1,
+                    1,
+                    1
+                ],
+                "select_new_ys": [
+                    "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\n",
+                    "r2c1 = 1 - Row 2 is missing 1 and 4; column 1 already has 4 (in r4c1), so only 1 fits.\n",
+                    "r2c2 = 4 - Row 2 is missing 1 and 4; column 2 already has 1\n"
+                ],
+                "used_fallback": false,
+                "evaluation_source": "model"
+            },
+            {
+                "depth": 1,
+                "x": ". . 3 .\n. . . 2\n. 3 . 1\n. 1 2 3",
+                "y": "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\n",
+                "new_ys": [
+                    "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\nr1c4 = 4 - forced: this cell has only one legal candidate.\n",
+                    "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\nr2c2 = 4 - forced: this cell has only one legal candidate.\n",
+                    "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\nr3c3 = 4 - forced: this cell has only one legal candidate.\n",
+                    "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\nr4c1 = 4 - forced: this cell has only one legal candidate.\n",
+                    "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\nr1c2 = 2 - legal candidate from deterministic Sudoku fallback.\n",
+                    "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\nr2c1 = 3 - legal candidate from deterministic Sudoku fallback.\n",
+                    "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\nr2c3 = 1 - legal candidate from deterministic Sudoku fallback.\n",
+                    "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\nr3c1 = 2 - legal candidate from deterministic Sudoku fallback.\n"
+                ],
+                "values": [
+                    20,
+                    20,
+                    20,
+                    20,
+                    1,
+                    1,
+                    1,
+                    1
+                ],
+                "select_new_ys": [
+                    "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\nr1c4 = 4 - forced: this cell has only one legal candidate.\n",
+                    "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\nr2c2 = 4 - forced: this cell has only one legal candidate.\n",
+                    "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\nr3c3 = 4 - forced: this cell has only one legal candidate.\n"
+                ],
+                "used_fallback": true,
+                "evaluation_source": "local"
+            },
+            {
+                "depth": 2,
+                "x": ". . 3 .\n. . . 2\n. 3 . 1\n. 1 2 3",
+                "y": "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\nr1c4 = 4 - forced: this cell has only one legal candidate.\n",
+                "new_ys": [
+                    "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\nr1c4 = 4 - forced: this cell has only one legal candidate.\nr1c2 = 2 - forced: this cell has only one legal candidate.\n",
+                    "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\nr1c4 = 4 - forced: this cell has only one legal candidate.\nr2c2 = 4 - forced: this cell has only one legal candidate.\n",
+                    "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\nr1c4 = 4 - forced: this cell has only one legal candidate.\nr2c3 = 1 - forced: this cell has only one legal candidate.\n",
+                    "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\nr1c4 = 4 - forced: this cell has only one legal candidate.\nr3c3 = 4 - forced: this cell has only one legal candidate.\n",
+                    "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\nr1c4 = 4 - forced: this cell has only one legal candidate.\nr4c1 = 4 - forced: this cell has only one legal candidate.\n",
+                    "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\nr1c4 = 4 - forced: this cell has only one legal candidate.\nr2c1 = 3 - legal candidate from deterministic Sudoku fallback.\n",
+                    "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\nr1c4 = 4 - forced: this cell has only one legal candidate.\nr3c1 = 2 - legal candidate from deterministic Sudoku fallback.\n"
+                ],
+                "values": [
+                    20,
+                    20,
+                    20,
+                    20,
+                    20,
+                    1,
+                    1
+                ],
+                "select_new_ys": [
+                    "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\nr1c4 = 4 - forced: this cell has only one legal candidate.\nr1c2 = 2 - forced: this cell has only one legal candidate.\n",
+                    "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\nr1c4 = 4 - forced: this cell has only one legal candidate.\nr2c2 = 4 - forced: this cell has only one legal candidate.\n",
+                    "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\nr1c4 = 4 - forced: this cell has only one legal candidate.\nr2c3 = 1 - forced: this cell has only one legal candidate.\n"
+                ],
+                "used_fallback": true,
+                "evaluation_source": "local"
+            },
+            {
+                "depth": 3,
+                "x": ". . 3 .\n. . . 2\n. 3 . 1\n. 1 2 3",
+                "y": "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\nr1c4 = 4 - forced: this cell has only one legal candidate.\nr1c2 = 2 - forced: this cell has only one legal candidate.\n",
+                "new_ys": [
+                    "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\nr1c4 = 4 - forced: this cell has only one legal candidate.\nr1c2 = 2 - forced: this cell has only one legal candidate.\nr2c2 = 4 - forced: this cell has only one legal candidate.\n",
+                    "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\nr1c4 = 4 - forced: this cell has only one legal candidate.\nr1c2 = 2 - forced: this cell has only one legal candidate.\nr2c3 = 1 - forced: this cell has only one legal candidate.\n",
+                    "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\nr1c4 = 4 - forced: this cell has only one legal candidate.\nr1c2 = 2 - forced: this cell has only one legal candidate.\nr3c3 = 4 - forced: this cell has only one legal candidate.\n",
+                    "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\nr1c4 = 4 - forced: this cell has only one legal candidate.\nr1c2 = 2 - forced: this cell has only one legal candidate.\nr4c1 = 4 - forced: this cell has only one legal candidate.\n",
+                    "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\nr1c4 = 4 - forced: this cell has only one legal candidate.\nr1c2 = 2 - forced: this cell has only one legal candidate.\nr2c1 = 3 - legal candidate from deterministic Sudoku fallback.\n",
+                    "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\nr1c4 = 4 - forced: this cell has only one legal candidate.\nr1c2 = 2 - forced: this cell has only one legal candidate.\nr3c1 = 2 - legal candidate from deterministic Sudoku fallback.\n"
+                ],
+                "values": [
+                    20,
+                    20,
+                    20,
+                    20,
+                    1,
+                    1
+                ],
+                "select_new_ys": [
+                    "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\nr1c4 = 4 - forced: this cell has only one legal candidate.\nr1c2 = 2 - forced: this cell has only one legal candidate.\nr2c2 = 4 - forced: this cell has only one legal candidate.\n",
+                    "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\nr1c4 = 4 - forced: this cell has only one legal candidate.\nr1c2 = 2 - forced: this cell has only one legal candidate.\nr2c3 = 1 - forced: this cell has only one legal candidate.\n",
+                    "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\nr1c4 = 4 - forced: this cell has only one legal candidate.\nr1c2 = 2 - forced: this cell has only one legal candidate.\nr3c3 = 4 - forced: this cell has only one legal candidate.\n"
+                ],
+                "used_fallback": true,
+                "evaluation_source": "local"
+            },
+            {
+                "depth": 4,
+                "x": ". . 3 .\n. . . 2\n. 3 . 1\n. 1 2 3",
+                "y": "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\nr1c4 = 4 - forced: this cell has only one legal candidate.\nr1c2 = 2 - forced: this cell has only one legal candidate.\nr2c2 = 4 - forced: this cell has only one legal candidate.\n",
+                "new_ys": [
+                    "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\nr1c4 = 4 - forced: this cell has only one legal candidate.\nr1c2 = 2 - forced: this cell has only one legal candidate.\nr2c2 = 4 - forced: this cell has only one legal candidate.\nr2c1 = 3 - forced: this cell has only one legal candidate.\n",
+                    "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\nr1c4 = 4 - forced: this cell has only one legal candidate.\nr1c2 = 2 - forced: this cell has only one legal candidate.\nr2c2 = 4 - forced: this cell has only one legal candidate.\nr2c3 = 1 - forced: this cell has only one legal candidate.\n",
+                    "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\nr1c4 = 4 - forced: this cell has only one legal candidate.\nr1c2 = 2 - forced: this cell has only one legal candidate.\nr2c2 = 4 - forced: this cell has only one legal candidate.\nr3c3 = 4 - forced: this cell has only one legal candidate.\n",
+                    "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\nr1c4 = 4 - forced: this cell has only one legal candidate.\nr1c2 = 2 - forced: this cell has only one legal candidate.\nr2c2 = 4 - forced: this cell has only one legal candidate.\nr4c1 = 4 - forced: this cell has only one legal candidate.\n",
+                    "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\nr1c4 = 4 - forced: this cell has only one legal candidate.\nr1c2 = 2 - forced: this cell has only one legal candidate.\nr2c2 = 4 - forced: this cell has only one legal candidate.\nr3c1 = 2 - legal candidate from deterministic Sudoku fallback.\n"
+                ],
+                "values": [
+                    20,
+                    20,
+                    20,
+                    20,
+                    1
+                ],
+                "select_new_ys": [
+                    "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\nr1c4 = 4 - forced: this cell has only one legal candidate.\nr1c2 = 2 - forced: this cell has only one legal candidate.\nr2c2 = 4 - forced: this cell has only one legal candidate.\nr2c1 = 3 - forced: this cell has only one legal candidate.\n",
+                    "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\nr1c4 = 4 - forced: this cell has only one legal candidate.\nr1c2 = 2 - forced: this cell has only one legal candidate.\nr2c2 = 4 - forced: this cell has only one legal candidate.\nr2c3 = 1 - forced: this cell has only one legal candidate.\n",
+                    "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\nr1c4 = 4 - forced: this cell has only one legal candidate.\nr1c2 = 2 - forced: this cell has only one legal candidate.\nr2c2 = 4 - forced: this cell has only one legal candidate.\nr3c3 = 4 - forced: this cell has only one legal candidate.\n"
+                ],
+                "used_fallback": true,
+                "evaluation_source": "local"
+            },
+            {
+                "depth": 5,
+                "x": ". . 3 .\n. . . 2\n. 3 . 1\n. 1 2 3",
+                "y": "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\nr1c4 = 4 - forced: this cell has only one legal candidate.\nr1c2 = 2 - forced: this cell has only one legal candidate.\nr2c2 = 4 - forced: this cell has only one legal candidate.\nr2c1 = 3 - forced: this cell has only one legal candidate.\n",
+                "new_ys": [
+                    "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\nr1c4 = 4 - forced: this cell has only one legal candidate.\nr1c2 = 2 - forced: this cell has only one legal candidate.\nr2c2 = 4 - forced: this cell has only one legal candidate.\nr2c1 = 3 - forced: this cell has only one legal candidate.\nr2c3 = 1 - forced: this cell has only one legal candidate.\n",
+                    "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\nr1c4 = 4 - forced: this cell has only one legal candidate.\nr1c2 = 2 - forced: this cell has only one legal candidate.\nr2c2 = 4 - forced: this cell has only one legal candidate.\nr2c1 = 3 - forced: this cell has only one legal candidate.\nr3c3 = 4 - forced: this cell has only one legal candidate.\n",
+                    "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\nr1c4 = 4 - forced: this cell has only one legal candidate.\nr1c2 = 2 - forced: this cell has only one legal candidate.\nr2c2 = 4 - forced: this cell has only one legal candidate.\nr2c1 = 3 - forced: this cell has only one legal candidate.\nr4c1 = 4 - forced: this cell has only one legal candidate.\n",
+                    "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\nr1c4 = 4 - forced: this cell has only one legal candidate.\nr1c2 = 2 - forced: this cell has only one legal candidate.\nr2c2 = 4 - forced: this cell has only one legal candidate.\nr2c1 = 3 - forced: this cell has only one legal candidate.\nr3c1 = 2 - legal candidate from deterministic Sudoku fallback.\n"
+                ],
+                "values": [
+                    20,
+                    20,
+                    20,
+                    1
+                ],
+                "select_new_ys": [
+                    "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\nr1c4 = 4 - forced: this cell has only one legal candidate.\nr1c2 = 2 - forced: this cell has only one legal candidate.\nr2c2 = 4 - forced: this cell has only one legal candidate.\nr2c1 = 3 - forced: this cell has only one legal candidate.\nr2c3 = 1 - forced: this cell has only one legal candidate.\n",
+                    "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\nr1c4 = 4 - forced: this cell has only one legal candidate.\nr1c2 = 2 - forced: this cell has only one legal candidate.\nr2c2 = 4 - forced: this cell has only one legal candidate.\nr2c1 = 3 - forced: this cell has only one legal candidate.\nr3c3 = 4 - forced: this cell has only one legal candidate.\n",
+                    "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\nr1c4 = 4 - forced: this cell has only one legal candidate.\nr1c2 = 2 - forced: this cell has only one legal candidate.\nr2c2 = 4 - forced: this cell has only one legal candidate.\nr2c1 = 3 - forced: this cell has only one legal candidate.\nr4c1 = 4 - forced: this cell has only one legal candidate.\n"
+                ],
+                "used_fallback": true,
+                "evaluation_source": "local"
+            },
+            {
+                "depth": 6,
+                "x": ". . 3 .\n. . . 2\n. 3 . 1\n. 1 2 3",
+                "y": "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\nr1c4 = 4 - forced: this cell has only one legal candidate.\nr1c2 = 2 - forced: this cell has only one legal candidate.\nr2c2 = 4 - forced: this cell has only one legal candidate.\nr2c1 = 3 - forced: this cell has only one legal candidate.\nr2c3 = 1 - forced: this cell has only one legal candidate.\n",
+                "new_ys": [
+                    "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\nr1c4 = 4 - forced: this cell has only one legal candidate.\nr1c2 = 2 - forced: this cell has only one legal candidate.\nr2c2 = 4 - forced: this cell has only one legal candidate.\nr2c1 = 3 - forced: this cell has only one legal candidate.\nr2c3 = 1 - forced: this cell has only one legal candidate.\nr3c3 = 4 - forced: this cell has only one legal candidate.\n",
+                    "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\nr1c4 = 4 - forced: this cell has only one legal candidate.\nr1c2 = 2 - forced: this cell has only one legal candidate.\nr2c2 = 4 - forced: this cell has only one legal candidate.\nr2c1 = 3 - forced: this cell has only one legal candidate.\nr2c3 = 1 - forced: this cell has only one legal candidate.\nr4c1 = 4 - forced: this cell has only one legal candidate.\n",
+                    "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\nr1c4 = 4 - forced: this cell has only one legal candidate.\nr1c2 = 2 - forced: this cell has only one legal candidate.\nr2c2 = 4 - forced: this cell has only one legal candidate.\nr2c1 = 3 - forced: this cell has only one legal candidate.\nr2c3 = 1 - forced: this cell has only one legal candidate.\nr3c1 = 2 - legal candidate from deterministic Sudoku fallback.\n"
+                ],
+                "values": [
+                    20,
+                    20,
+                    1
+                ],
+                "select_new_ys": [
+                    "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\nr1c4 = 4 - forced: this cell has only one legal candidate.\nr1c2 = 2 - forced: this cell has only one legal candidate.\nr2c2 = 4 - forced: this cell has only one legal candidate.\nr2c1 = 3 - forced: this cell has only one legal candidate.\nr2c3 = 1 - forced: this cell has only one legal candidate.\nr3c3 = 4 - forced: this cell has only one legal candidate.\n",
+                    "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\nr1c4 = 4 - forced: this cell has only one legal candidate.\nr1c2 = 2 - forced: this cell has only one legal candidate.\nr2c2 = 4 - forced: this cell has only one legal candidate.\nr2c1 = 3 - forced: this cell has only one legal candidate.\nr2c3 = 1 - forced: this cell has only one legal candidate.\nr4c1 = 4 - forced: this cell has only one legal candidate.\n",
+                    "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\nr1c4 = 4 - forced: this cell has only one legal candidate.\nr1c2 = 2 - forced: this cell has only one legal candidate.\nr2c2 = 4 - forced: this cell has only one legal candidate.\nr2c1 = 3 - forced: this cell has only one legal candidate.\nr2c3 = 1 - forced: this cell has only one legal candidate.\nr3c1 = 2 - legal candidate from deterministic Sudoku fallback.\n"
+                ],
+                "used_fallback": true,
+                "evaluation_source": "local"
+            },
+            {
+                "depth": 7,
+                "x": ". . 3 .\n. . . 2\n. 3 . 1\n. 1 2 3",
+                "y": "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\nr1c4 = 4 - forced: this cell has only one legal candidate.\nr1c2 = 2 - forced: this cell has only one legal candidate.\nr2c2 = 4 - forced: this cell has only one legal candidate.\nr2c1 = 3 - forced: this cell has only one legal candidate.\nr2c3 = 1 - forced: this cell has only one legal candidate.\nr3c3 = 4 - forced: this cell has only one legal candidate.\n",
+                "new_ys": [
+                    "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\nr1c4 = 4 - forced: this cell has only one legal candidate.\nr1c2 = 2 - forced: this cell has only one legal candidate.\nr2c2 = 4 - forced: this cell has only one legal candidate.\nr2c1 = 3 - forced: this cell has only one legal candidate.\nr2c3 = 1 - forced: this cell has only one legal candidate.\nr3c3 = 4 - forced: this cell has only one legal candidate.\nr3c1 = 2 - Row 3 is missing only 2; column 1 and the bottom-left box allow it.\n",
+                    "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\nr1c4 = 4 - forced: this cell has only one legal candidate.\nr1c2 = 2 - forced: this cell has only one legal candidate.\nr2c2 = 4 - forced: this cell has only one legal candidate.\nr2c1 = 3 - forced: this cell has only one legal candidate.\nr2c3 = 1 - forced: this cell has only one legal candidate.\nr3c3 = 4 - forced: this cell has only one legal candidate.\nr4c1 = 4 - Row 4 is missing only 4; column 1 and the bottom-left box allow it.\n"
+                ],
+                "values": [
+                    1,
+                    1
+                ],
+                "select_new_ys": [
+                    "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\nr1c4 = 4 - forced: this cell has only one legal candidate.\nr1c2 = 2 - forced: this cell has only one legal candidate.\nr2c2 = 4 - forced: this cell has only one legal candidate.\nr2c1 = 3 - forced: this cell has only one legal candidate.\nr2c3 = 1 - forced: this cell has only one legal candidate.\nr3c3 = 4 - forced: this cell has only one legal candidate.\nr3c1 = 2 - Row 3 is missing only 2; column 1 and the bottom-left box allow it.\n",
+                    "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\nr1c4 = 4 - forced: this cell has only one legal candidate.\nr1c2 = 2 - forced: this cell has only one legal candidate.\nr2c2 = 4 - forced: this cell has only one legal candidate.\nr2c1 = 3 - forced: this cell has only one legal candidate.\nr2c3 = 1 - forced: this cell has only one legal candidate.\nr3c3 = 4 - forced: this cell has only one legal candidate.\nr4c1 = 4 - Row 4 is missing only 4; column 1 and the bottom-left box allow it.\n"
+                ],
+                "used_fallback": false,
+                "evaluation_source": "model"
+            },
+            {
+                "depth": 8,
+                "x": ". . 3 .\n. . . 2\n. 3 . 1\n. 1 2 3",
+                "y": "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\nr1c4 = 4 - forced: this cell has only one legal candidate.\nr1c2 = 2 - forced: this cell has only one legal candidate.\nr2c2 = 4 - forced: this cell has only one legal candidate.\nr2c1 = 3 - forced: this cell has only one legal candidate.\nr2c3 = 1 - forced: this cell has only one legal candidate.\nr3c3 = 4 - forced: this cell has only one legal candidate.\nr3c1 = 2 - Row 3 is missing only 2; column 1 and the bottom-left box allow it.\n",
+                "new_ys": [
+                    "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\nr1c4 = 4 - forced: this cell has only one legal candidate.\nr1c2 = 2 - forced: this cell has only one legal candidate.\nr2c2 = 4 - forced: this cell has only one legal candidate.\nr2c1 = 3 - forced: this cell has only one legal candidate.\nr2c3 = 1 - forced: this cell has only one legal candidate.\nr3c3 = 4 - forced: this cell has only one legal candidate.\nr3c1 = 2 - Row 3 is missing only 2; column 1 and the bottom-left box allow it.\nr4c1 = 4 - forced: this cell has only one legal candidate.\n"
+                ],
+                "values": [
+                    20
+                ],
+                "select_new_ys": [
+                    "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\nr1c4 = 4 - forced: this cell has only one legal candidate.\nr1c2 = 2 - forced: this cell has only one legal candidate.\nr2c2 = 4 - forced: this cell has only one legal candidate.\nr2c1 = 3 - forced: this cell has only one legal candidate.\nr2c3 = 1 - forced: this cell has only one legal candidate.\nr3c3 = 4 - forced: this cell has only one legal candidate.\nr3c1 = 2 - Row 3 is missing only 2; column 1 and the bottom-left box allow it.\nr4c1 = 4 - forced: this cell has only one legal candidate.\n"
+                ],
+                "used_fallback": true,
+                "evaluation_source": "local"
+            }
+        ],
+        "nodes": 10,
+        "idx": 21,
+        "ys": [
+            "r1c1 = 1 - Row 1 is missing 1 and 2; column 1 already has 2 (in r3c1), so only 1 fits.\nr1c4 = 4 - forced: this cell has only one legal candidate.\nr1c2 = 2 - forced: this cell has only one legal candidate.\nr2c2 = 4 - forced: this cell has only one legal candidate.\nr2c1 = 3 - forced: this cell has only one legal candidate.\nr2c3 = 1 - forced: this cell has only one legal candidate.\nr3c3 = 4 - forced: this cell has only one legal candidate.\nr3c1 = 2 - Row 3 is missing only 2; column 1 and the bottom-left box allow it.\nr4c1 = 4 - forced: this cell has only one legal candidate.\n"
+        ],
+        "infos": [
+            {
+                "r": 1,
+                "r_valid": 1,
+                "solution": "1234341223414123",
+                "solution_board": "1 2 3 4\n3 4 1 2\n2 3 4 1\n4 1 2 3",
+                "reason": ""
+            }
+        ]
+    }
+]

@@ -1,0 +1,39 @@
+[
+    {
+        "idx": 0,
+        "ys": [
+            "<think>\n\n</think>\n\n4321123434122143",
+            "<think>\n\n</think>\n\n4321123434122143",
+            "<think>\nThe user wants me to solve a 4x4 Sudoku puzzle.\nThe input format is a 16-character string where '0' represents an empty cell.\nThe digits allowed are 1, 2, 3, 4.\nConstraints:\n1. Each row contains 1-4 exactly once.\n2. Each column contains 1-4 exactly once.\n3. Each 2x2 box contains 1-4 exactly once.\n\nThe puzzle provided is: `0321003004002100`\n\nLet's break down the grid:\nRow 1: 0 3 2 1\nRow 2: ",
+            "<think>\nThe user wants me to solve a 4x4 Sudoku puzzle.\n\n**Rules:**\n1. Grid size: 4x4.\n2. Characters: Digits '1', '2', '3', '4'. '0' represents an empty cell.\n3. Constraints:\n   - Each row must contain 1, 2, 3, 4 exactly once.\n   - Each column must contain 1, 2, 3, 4 exactly once.\n   - Each 2x2 box (top-left, top-right, bottom-left, bottom-right) must contain 1, 2, 3, 4 exactly once.\n\n**Input Format:**\nA",
+            "<think>\nThe user wants me to solve a 4x4 Sudoku puzzle.\n\n**Rules:**\n- Grid size: 4x4.\n- Digits: 1, 2, 3, 4.\n- Constraints:\n  - Each row contains 1, 2, 3, 4 exactly once.\n  - Each column contains 1, 2, 3, 4 exactly once.\n  - Each 2x2 box contains 1, 2, 3, 4 exactly once.\n- Input format: 16-character string (0 for empty).\n- Output format: 16-character string (solved).\n\n**Input Puzzle:** `"
+        ],
+        "infos": [
+            {
+                "r": 1,
+                "r_valid": 1,
+                "solution": "4321123434122143"
+            },
+            {
+                "r": 1,
+                "r_valid": 1,
+                "solution": "4321123434122143"
+            },
+            {
+                "r": 0,
+                "r_valid": 0,
+                "solution": "0321003004002100"
+            },
+            {
+                "r": 0,
+                "r_valid": 0,
+                "solution": "0321003004002100"
+            },
+            {
+                "r": 0,
+                "r_valid": 0,
+                "solution": "0321003004002100"
+            }
+        ]
+    }
+]

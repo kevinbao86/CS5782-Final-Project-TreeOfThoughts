@@ -1,0 +1,409 @@
+[
+    {
+        "idx": 900,
+        "ys": [
+            "<think>\n\n</think>\n\n(10 - 6) * (5 + 4 / 4) is not possible with given numbers. Let's try other combinations.\n(10 - 4) * (6 - 5) = 6 * 1 = 6 (No)\n(10 - 5) * 4 + 6 = 5 * 4 + 6 = 26 (No)\n(10 - 6) * (5 + 4) = 4 * 9 = 36 (No)\n(10 - 4) * (6 / (5-?)) No.\n\nLet's look at:\n10 - 6",
+            "<think>\n\n</think>\n\nAnswer: 4 * 6 * (10 / 5) = 24",
+            "<think>\n\n</think>\n\nAnswer: 4 * 6 * (10 - 5) / 5 = 24",
+            "<think>\n\n</think>\n\nAnswer: 4 * 6 * (10 / 5) = 24",
+            "<think>\n\n</think>\n\nAnswer: (10 - 6) * (5 + 4) = 24",
+            "<think>\n\n</think>\n\nAnswer: 4 * 6 * (10 / 5) = 24",
+            "<think>\n\n</think>\n\nAnswer: (10 - 6) * (4 + 5) = 24",
+            "<think>\n\n</think>\n\nAnswer: (10 - 6) * (5 + 4 / 4) -> Wait, 4/4 is 1, 5+1=6, 4*6=24. But I only have one 4. Let's re-evaluate.\n\nInput: 4 5 6 10\n\nPossible combinations:\n1. $10 + 5 + 6 + 4 = 25$ (Too high)\n2. $10 + 5 + 6 - 4 = 17$\n3. $10 * 5 = 50$, $50 / ? $ No.\n4. $(1",
+            "<think>\n\n</think>\n\n(10 - 6) * (5 + 4 / 4) is not possible with integer division logic usually, let's try simpler ones.\n(10 - 4) * (6 - 5) = 6 * 1 = 6 (No)\n(10 - 6) * (5 + 4/4) -> 4 * 6 = 24. Wait, I only have one 4. The input is 4, 5, 6, 10.\nLet's try:\n(10 - 6) * (5 + 4/4) requires two 4s. I have 4, ",
+            "<think>\n\n</think>\n\nAnswer: 4 * 6 * (10 / 5) = 24",
+            "<think>\n\n</think>\n\nAnswer: (10 - 4) * (6 - 5) * 4 is incorrect. Let's try again.\n(10 - 4) * (6 - 5) = 6. 6 * 4 = 24. Wait, I used 4 twice? No, input is 4, 5, 6, 10.\nLet's check: (10 - 4) = 6. (6 - 5) = 1. 6 * 1 = 6. Then multiply by... wait, I have used 10, 4, 6, 5.\nAh, the previous step was `(",
+            "<think>\n\n</think>\n\nAnswer: (10 - 6) * (5 + 4 / 4) = 24",
+            "<think>\n\n</think>\n\nAnswer: 4 * 6 * (10 - 5) / 10 = 24",
+            "<think>\n\n</think>\n\nAnswer: 4 * 6 * (10 - 9) is not possible with given inputs. Let's try another combination.\nInput: 4 5 6 10\n\nPossible solution:\n(10 - 6) * (5 + 1) -> Wait, 1 is not in the input.\nLet's try: (10 - 5) * 6 - 4 = 5 * 6 - 4 = 30 - 4 = 26 (No)\nLet's try: (10 - 4) * (6 - 5) = 6 * 1 = 6 (No)\nLet's try",
+            "<think>\n\n</think>\n\nAnswer: (10 - 6) * (5 + 4 / 4) -> Wait, 4/4=1, 5+1=6, 4*6=24. But I only have one 4. Let's re-evaluate.\nInput: 4 5 6 10\n\nLet's try:\n10 - 6 = 4\n5 - 4 = 1\n4 * 1 = 4... No.\n\nLet's try:\n10 - 5 = 5\n6 - 4 = 2\n5 * 2 = 10... No.\n\nLet's try:\n(10",
+            "<think>\n\n</think>\n\nAnswer: 4 * 6 * (10 - 5) / 10 = 24\n\nWait, let's re-evaluate. The previous examples are simpler. Let's look for a standard solution.\nInput: 4 5 6 10\n\nPossible combinations:\n1. (10 - 6) * (5 + 4) = 4 * 9 = 36 (No)\n2. (10 - 4) * (6 - 5) = 6 * 1 = 6 (No)\n3. (10 - 5) * 4 + 6 = 5 * 4 + 6",
+            "<think>\n\n</think>\n\nAnswer: 6 * 10 / 5 * 4 = 24",
+            "<think>\n\n</think>\n\nAnswer: 4 * 6 * (10 - 5) / 10 = 24",
+            "<think>\n\n</think>\n\nAnswer: (10 - 6) * (5 + 4 / 4) \nWait, let's re-evaluate. The input is 4 5 6 10.\n\nLet's try simple combinations:\n1. $10 + 6 + 5 + 4 = 25$ (Close)\n2. $10 + 6 + 5 - 4 = 17$\n3. $10 * 6 / (5 - 4) = 60$\n4. $(10 - 6) * (5 + ?)$ -> $4 * 6 = 24$. We have 4 and 5",
+            "<think>\n\n</think>\n\nAnswer: (10 - 6) * (5 + 4 - 5) is incorrect logic, let's try again.\n(10 - 6) * (5 + 4) = 4 * 9 = 36 (No)\n(10 - 5) * (6 - 4/4) ? No 1s.\nLet's look at: 4 * (10 - 6 + ?)\nHow about: (10 - 6) * (5 + 4) no.\n(10 - 4) * (6 - 5) = 6 * 1 = 6.\n(10",
+            "<think>\n\n</think>\n\nAnswer: 4 * 6 * (10 - 5) / 10 = 24",
+            "<think>\n\n</think>\n\nAnswer: (10 - 4) * (6 - 5) * 4 = 24",
+            "<think>\n\n</think>\n\nAnswer: (5 - 4) * 6 * 10 / 10 + 18 ... wait, let's find a simpler one.\n(10 - 6) * (5 + 4) / 3 ... no 3.\n(10 - 6) * (4 + 5) ... no.\n10 + 5 + 4 + 6 = 25. Close.\n(10 - 5) * 6 - 4 = 30 - 4 = 26.\n(10 - 4) * (6 - 5) ... 6.\n(10 + 5 +",
+            "<think>\n\n</think>\n\nAnswer: (10 - 6) * (5 + 4 / 4) is invalid because we only have one 4. Let's try again.\nInput: 4 5 6 10\n\nPossible combinations:\n1. $10 + 5 + 6 + 4 = 25$ (Close)\n2. $10 * 5 = 50$, $50 - 6 = 44$, $44 - 4 = 40$ (No)\n3. $6 * 5 = 30$, $30 - 10 + 4 = 24$. This works: $6 *",
+            "<think>\n\n</think>\n\nAnswer: (10 - 6) * (4 + 5) = 24",
+            "<think>\n\n</think>\n\nAnswer: (10 - 6) * (4 + 5) = 24",
+            "<think>\n\n</think>\n\nAnswer: (10 - 6) * (4 + 5 - 1) is not valid because 1 is not in input. Let's try again.\n\nInput: 4 5 6 10\n\nPossible combinations:\n1. $10 + 5 + 6 + 4 = 25$ (Close)\n2. $10 * 6 / (5 - 4) = 60$\n3. $(10 - 6) * (5 + 4) = 4 * 9 = 36$\n4. $(10 - 5) * 4 + 6 = 5 * 4 +",
+            "<think>\n\n</think>\n\nAnswer: (10 - 6) * (4 + 5) = 24",
+            "<think>\n\n</think>\n\nAnswer: (10 - 6) * (5 + 4 / 4) is invalid because we only have one 4. Let's try another approach.\n(10 - 6) * (5 + 1) -> we don't have 1.\nLet's look at: 4, 5, 6, 10.\n10 + 5 + 6 + 4 = 25 (close)\n10 * 5 - 6 - 4 = 50 - 10 = 40\n(10 - 5) * 6 - 4 = 30 - 4 = 26\n",
+            "<think>\n\n</think>\n\nAnswer: 4 * 6 * (10 - 5) / 10 = 24",
+            "<think>\n\n</think>\n\nAnswer: 4 * (10 - 5) + 6 = 24",
+            "<think>\n\n</think>\n\nAnswer: (10 - 6) * (4 + 5) = 24",
+            "<think>\n\n</think>\n\nAnswer: 4 * 6 * (10 - 5) / 10 = 24",
+            "<think>\n\n</think>\n\nAnswer: 4 * 6 * (10 - 5) / 10 = 24",
+            "<think>\n\n</think>\n\nAnswer: 4 * 6 * (10 / 5) = 24",
+            "<think>\n\n</think>\n\nAnswer: (10 - 4) * (6 - 5) * 4 = 24\n\nWait, let me double check that.\n(10 - 4) = 6\n(6 - 5) = 1\n6 * 1 * 4 = 24.\nThis uses 4, 5, 6, 10. Correct.\n\nLet's try another one to be sure.\n(10 - 6) * (5 + 4/4)? No, only one 4.\n(10 - 4) * 5 - 6 = 24?\n6 * 5 = 30",
+            "<think>\n\n</think>\n\nAnswer: (10 - 6) * (5 + 4 / 4) = 24",
+            "<think>\n\n</think>\n\nAnswer: (10 - 4) * (6 - 5) * 4 is incorrect logic, let's try: 4 * 5 + 10 - 6 = 20 + 4 = 24.\nOr: (10 - 6) * (5 + 4 / 4)? No, only one 4.\nLet's try: (10 - 4) * (6 - 5) * ? No.\nHow about: 4 * (10 - 5) + 6 - 6? No.\n(10 - 6) * (4 + 5 - ?)\nLet's look at",
+            "<think>\n\n</think>\n\nAnswer: (10 - 6) * (5 + 4) = 24",
+            "<think>\n\n</think>\n\nAnswer: 4 * 6 * (10 / 5) = 24",
+            "<think>\n\n</think>\n\nAnswer: 4 * 6 * (10 - 5) / 10 = 24",
+            "<think>\n\n</think>\n\n(10 - 6) * (4 + 5) - 12 ... wait, that's not right. Let's try:\n(10 - 6) * (4 + 5) = 4 * 9 = 36. No.\n(10 - 5) * (6 - 4) = 5 * 2 = 10. No.\n(10 - 4) * (6 - 5) = 6 * 1 = 6. No.\n(10 + 6 - 4) * ? ...\nLet's try: (10 - 6) * (5 + 4 /",
+            "<think>\n\n</think>\n\nAnswer: (10 - 6) * (4 + 5) = 24",
+            "<think>\n\n</think>\n\nAnswer: (10 - 6) * (4 + 5) / 3 is not possible with given numbers. Let's try again.\n(10 - 4) * (6 - 5) * ? No.\n(10 + 5 - 6) * 4 = 9 * 4 = 36. No.\n(10 - 6) * (5 + 4/4)? No 1.\n(10 - 6) * 5 + 4 = 24.\nLet's check: 10 - 6 = 4. 4 * 5 = 20. 20 +",
+            "<think>\n\n</think>\n\nAnswer: 10 * 6 / 5 + 4 = 24",
+            "<think>\n\n</think>\n\nAnswer: (10 - 4) * (6 - 5) * 4 = 24\n\nWait, let me double check that.\n(10 - 4) = 6\n(6 - 5) = 1\n6 * 1 * 4 = 24.\nThis uses 10, 4, 6, 5, 4. But the input is 4, 5, 6, 10. I used 4 twice. That is invalid.\n\nLet's try again.\nInput: 4 5 6 10\n\nPossible combinations:\n1. $10 + 5 + 6",
+            "<think>\n\n</think>\n\nAnswer: (10 - 6) * (5 + 4 / 4) = 24\nWait, let me double check that.\nInput: 4 5 6 10\nTarget: 24\n\nLet's try standard combinations:\n1. $10 + 5 + 6 + 4 = 25$ (Close)\n2. $(10 - 6) * (5 + 4/4)$ -> Wait, I only have one 4. The input is 4, 5, 6, 10.\n   So $(10 - 6) = 4$. Remaining numbers: 4, ",
+            "<think>\n\n</think>\n\nAnswer: (10 - 6) * 5 + 4 = 24",
+            "<think>\n\n</think>\n\nAnswer: (10 - 6) * (5 + 4 / 4) is invalid because we only have one 4. Let's try another approach.\n\nWe have 4, 5, 6, 10.\nTarget: 24.\n\nTry: $4 \\times 6 = 24$. We have 5 and 10 left. Can we make 1 or 0 from 5 and 10 to keep the 24?\n$10 / 5 = 2$. Not 1.\n$5 - 10 = -5$. Not 0.\n\nTry: $6 \\times 4 = 2",
+            "<think>\n\n</think>\n\nAnswer: (10 - 6) * 5 + 4 = 24",
+            "<think>\n\n</think>\n\nAnswer: (10 - 6) * (4 + 5 - 1) = 24\nWait, let's re-evaluate. I used a '1' which is not in the input. The input is 4, 5, 6, 10.\n\nLet's try again:\n$(10 - 6) * (4 + 5)$? No, $4 * 9 = 36$.\n$(10 - 5) * 6 - 4$? $5 * 6 - 4 = 30 - 4 = 26$.\n$(10 - 4) * (6 - 5)$",
+            "<think>\n\n</think>\n\nAnswer: (10 - 6) * (5 + 4 / 4) is invalid because we only have one 4. Let's try again.\n\nWe have 4, 5, 6, 10.\nTarget: 24.\n\nOption 1:\n$10 + 5 + 6 + 4 = 25$ (Close, but not 24)\n$10 * 5 - 6 - 4 = 50 - 10 = 40$\n$6 * 5 - 10 + 4 = 30 - 6 = 24$ -> This works.\n\nLet",
+            "<think>\n\n</think>\n\nAnswer: (10 - 6) * (5 + 4 / 4) is invalid because we only have one 4. Let's try again.\nWe have 4, 5, 6, 10.\nTarget: 24.\n\nOption 1:\n(10 - 6) * (5 + ?) -> 4 * 6 = 24. We need to make 6 from 5 and 4? No, we used 10 and 6. Remaining are 5 and 4.\nCan we make 6 from 5 and 4? No.\nCan we make 4 from 5 and 4",
+            "<think>\n\n</think>\n\nAnswer: 4 * (10 - 5 + 6 / 6) = 24 \nWait, let me re-evaluate. I need to use exactly the numbers 4, 5, 6, 10.\n\nLet's try:\n$10 - 6 = 4$\n$4 + 4 = 8$\n$8 * ? $ No, I have 5 left. $8 * 5 = 40$. No.\n\nLet's try:\n$6 - 4 = 2$\n$10 - 2 = 8$\n$8 * ? $ No, I have 5 left.\n\nLet's",
+            "<think>\n\n</think>\n\nAnswer: 4 * 6 * (10 - 5) / 5 = 24",
+            "<think>\n\n</think>\n\nAnswer: 4 * 6 * (10 - 5) / 10 = 24",
+            "<think>\n\n</think>\n\nAnswer: (10 - 4) * (6 - 5) * 4 is incorrect because we only have one 4. Let's try again.\n(10 - 6) * (4 + 5) = 4 * 9 = 36 (No)\n(10 - 4) * (6 / ?) No.\nLet's look at simple combinations:\n10 + 6 + 5 + 4 = 25 (Close)\n10 * 6 / (5 - ?)\n(10 - 4) * (6 - ?)\nHow about: (10 - 6) * (5 +",
+            "<think>\n\n</think>\n\nAnswer: 4 * 6 * (10 - 5) / 10 = 24",
+            "<think>\n\n</think>\n\nAnswer: 6 * 10 / 5 + 4 = 24",
+            "<think>\n\n</think>\n\nAnswer: (10 - 6) * (5 + 4 / 4) is not possible with given numbers. Let's try another combination.\n(10 - 4) * (6 - 5) * ? No.\n(5 - 4) * 6 * ? No.\n10 + 5 + 4 + 6 = 25 (Close)\n(10 - 6) * (5 + 4) = 4 * 9 = 36\n(10 - 5) * 4 + 6 = 20 + 6 = 26\n(6 - 4) * 10 +",
+            "<think>\n\n</think>\n\nAnswer: 4 * 6 * (10 - 5) / 10 = 24\n\nWait, let's re-evaluate to ensure it uses standard integer arithmetic steps clearly or a simpler path if possible.\n$4 \\times 6 = 24$\n$10 - 5 = 5$\n$24 \\times 5 / 10 = 12$ -> This is incorrect.\n\nLet's try another combination for 4, 5, 6, 10.\nTarget: 24\nNumbers: 4, 5, 6, 10\n\nOption 1:\n$(10 - 6)",
+            "<think>\n\n</think>\n\nAnswer: (10 - 6) * (4 + 5) = 24",
+            "<think>\n\n</think>\n\nAnswer: 4 * 6 * (10 - 5) / 5 = 24",
+            "<think>\n\n</think>\n\nAnswer: 4 * 6 * (10 / 5) = 24",
+            "<think>\n\n</think>\n\nAnswer: (10 - 6) * (5 + 4 / 4) = 24\n\nWait, let me double check that.\nInput: 4 5 6 10\nTarget: 24\n\nLet's try other combinations.\n1. $10 + 6 + 5 + 4 = 25$ (Close)\n2. $(10 - 4) * (6 - 5) = 6 * 1 = 6$\n3. $(10 - 6) * (5 + 1)$? No 1.\n4. $(10 - 5) * 4 + 6 -",
+            "<think>\n\n</think>\n\nAnswer: 4 * (10 - 5) + 6 - 6? No, let's try simpler.\nInput: 4 5 6 10\n\nLet's look for combinations:\n1. $10 + 6 + 5 + 4 = 25$ (Close)\n2. $10 + 6 + 5 - 4 = 17$\n3. $10 * 4 - 5 - 6 = 40 - 11 = 29$\n4. $6 * 5 - 10 + 4 = 30 - 10 + 4 = 24",
+            "<think>\n\n</think>\n\nAnswer: 10 * 4 + 6 - 5 = 24",
+            "<think>\n\n</think>\n\nAnswer: 10 + 6 + 5 + 4 = 24",
+            "<think>\n\n</think>\n\nAnswer: (10 - 6) * (5 + 4 / 4) is invalid because we don't have another 4. Let's try again.\n\nInput: 4 5 6 10\n\nPossible combinations:\n1. $10 + 6 + 5 + 4 = 25$ (Close)\n2. $10 + 6 + 5 - 4 = 17$\n3. $10 * (6 - 5) + 4 = 14$\n4. $(10 - 6) * (5 + ?)$ No.\n5. $4 * 6 * (10 -",
+            "<think>\n\n</think>\n\nAnswer: 4 * 6 * (10 - 5) / 10 = 24",
+            "<think>\n\n</think>\n\nAnswer: (10 - 6) * (5 + 4 / 4) is invalid because we only have one 4. Let's try another approach.\n(10 - 4) * (6 - 5) = 6 * 1 = 6 (No)\n(10 - 6) * (5 + 4) = 4 * 9 = 36 (No)\n(10 - 5) * 6 - 4 = 5 * 6 - 4 = 30 - 4 = 26 (No)\n(10 - 4) * 5 - 6 = 6 * ",
+            "<think>\n\n</think>\n\nAnswer: 4 * 6 * (10 - 5) / 5 = 24",
+            "<think>\n\n</think>\n\nAnswer: (10 - 4) * (6 - 5) * 4 is incorrect because we only have one 4. Let's try again.\n(10 - 6) * (4 + 5) = 4 * 9 = 36. No.\n(5 - 4) * 6 * 10 / something? No.\n10 + 5 + 4 + 6 = 25. Close.\n(10 - 4) * 6 / 5? No.\n(5 * 6 - 10) + 4? 30 - 10 + 4 = 24",
+            "<think>\n\n</think>\n\nAnswer: (10 - 6) * (4 + 5) = 24",
+            "<think>\n\n</think>\n\nAnswer: (10 - 6) * (4 + 5) = 24",
+            "<think>\n\n</think>\n\nAnswer: 4 * 6 * (10 - 5) / 10 = 24\nWait, let's re-evaluate. 4 * 6 = 24. 10 - 5 = 5. 24 * 5 / 10 = 120 / 10 = 12. That's incorrect.\n\nLet's try another combination.\n(10 - 6) * (5 + 4) / ? No.\n(10 - 6) * (5 + ?)\n(10 - 6) = 4. We have 4, 5 left. 4 * (5",
+            "<think>\n\n</think>\n\nAnswer: 4 * 6 * (10 - 5) / 10 is not integer friendly, let's try: (10 - 6) * (5 + 4) / ? No.\nLet's try: 10 + 5 + 4 + 6 = 25 (close).\nLet's try: (10 - 6) * (5 + 4) = 4 * 9 = 36.\nLet's try: (10 - 4) * (6 - 5) * ? No.\nLet's try: 6 * (10 - 5 - 4) = 6 * ",
+            "<think>\n\n</think>\n\nAnswer: (10 - 6) * (5 + 4 / 4) is invalid as we only have one 4. Let's try another combination.\n(10 - 6) * 5 + 4 = 4 * 5 + 4 = 20 + 4 = 24.\nSo, (10 - 6) * 5 + 4 = 24.\n\nAnswer: (10 - 6) * 5 + 4 = 24",
+            "<think>\n\n</think>\n\nAnswer: (10 - 6) * (5 + 4) = 24",
+            "<think>\n\n</think>\n\nAnswer: (10 - 6) * (5 + 4 / 4) is not possible with just 4,5,6,10 directly like that. Let's try standard combinations.\n10 + 5 + 6 + 4 = 25 (Close)\n(10 - 5) * 6 - 4 = 30 - 4 = 26\n(10 - 4) * (6 - 5) = 6\n(10 - 6) * (5 + 4/4) -> Wait, I only have one 4.\nLet's try: (10 - 5) * ",
+            "<think>\n\n</think>\n\nAnswer: (10 - 6) * (5 + 4 / 4) = 24",
+            "<think>\n\n</think>\n\nAnswer: 4 * 6 * (10 / 5) = 24",
+            "<think>\n\n</think>\n\nAnswer: (10 - 6) * (5 + 4 / 4) is incorrect because we only have one 4. Let's try again.\n(10 - 6) * (5 + 4/4) -> wait, input is 4 5 6 10.\nLet's try: (10 - 6) * (5 + ?) no.\nHow about: 4 * (10 - 6 + ?) no.\nLet's look at simple combinations:\n10 + 6 + 5 + 4 = 25 (close)\n10 * 6 / (5 - ?)\n(1",
+            "<think>\n\n</think>\n\nAnswer: (10 - 6) * (4 + 5 - 1) \nWait, I only have 4, 5, 6, 10. Let's re-evaluate.\n\nTarget: 24\nNumbers: 4, 5, 6, 10\n\nPossible combinations:\n1. $10 + 5 + 6 + 4 = 25$ (Too high)\n2. $10 + 5 + 6 - 4 = 17$\n3. $10 \\times 5 - 6 \\times 4 = 50 - 24 = 26$\n4.",
+            "<think>\n\n</think>\n\nAnswer: (10 - 6) * (5 + 4 / 4) = 24",
+            "<think>\n\n</think>\n\nAnswer: (10 - 6) * (4 + 5) = 24",
+            "<think>\n\n</think>\n\nAnswer: 4 * 6 * (10 - 5) / 10 = 24",
+            "<think>\n\n</think>\n\nAnswer: 4 * 6 * (10 - 9) is not possible with given numbers. Let's try: 10 - 6 = 4, 5 - 4 = 1, no.\nLet's try: 10 - 5 = 5, 6 - 4 = 2, 5 * ? no.\nLet's try: 4 * 5 = 20, 20 + 10 - 6 = 24.\nSo: 4 * 5 + 10 - 6 = 24\n\nAnswer: 4 * 5 + 10 - 6 = 24",
+            "<think>\n\n</think>\n\nAnswer: (10 - 6) * 5 + 4 = 24",
+            "<think>\n\n</think>\n\nAnswer: (10 - 6) * (5 + 4 / 4) is not possible with just 4,5,6,10 directly like that. Let's try standard combinations.\n\nPossible solution:\n$(10 - 6) * 5 + 4$? No, $4*5+4=24$. Wait, inputs are 4, 5, 6, 10.\n$(10 - 6) * 5 + 4 = 4 * 5 + 4 = 20 + 4 = 24$.\nLet's check if we used all numbers: 10, 6, 5",
+            "<think>\n\n</think>\n\nAnswer: (10 - 4) * (6 - 5 + 5) = 24\nWait, let me re-evaluate. The numbers are 4, 5, 6, 10.\nLet's try: $(10 - 6) * (5 + 4 / 4)$? No, only one 4.\nLet's try: $(10 - 4) * (6 - ?)$\nLet's try: $10 + 6 + 4 + 5 = 25$. Close.\nLet's try: $(10 - 6) * (5 + ?)$\nLet's try: $(5 -",
+            "<think>\n\n</think>\n\nAnswer: (4 * 6) / (10 - 5) * 5 = 24",
+            "<think>\n\n</think>\n\nAnswer: 10 + 6 + 5 + 4 = 24",
+            "<think>\n\n</think>\n\nAnswer: (10 - 4) * (6 - 5) * 4 is incorrect logic, let's try: (10 - 6) * (5 + 4/4) no.\nLet's try: (10 - 4) * (6 / (5 - ?)) no.\nLet's try: 6 * (10 - 5 - 4/4) no.\nLet's try: (10 - 6) * (5 + 4/4) no.\n\nLet's look at simple combinations:\n10 + 5 + 6 + ? = 21 + 4 = 25 (close)",
+            "<think>\n\n</think>\n\nAnswer: (10 - 4) * (6 - 5) * 4 = 24",
+            "<think>\n\n</think>\n\nAnswer: 4 * 6 * (10 - 5) / 5 = 24",
+            "<think>\n\n</think>\n\nAnswer: (10 - 6) * (5 + 4 / 4) is invalid because we only have one 4. Let's try again.\nWe have 4, 5, 6, 10.\nPossible combinations:\n1. $10 + 5 + 6 + 4 = 25$ (Close)\n2. $(10 - 6) * (5 + ?)$... no.\n3. $4 * 6 = 24$. Can we make 1 from 5 and 10? $10/5 = 2$. No. $5/10 = 0.5$. No.",
+            "<think>\n\n</think>\n\nAnswer: (10 - 6) * (5 + 4) = 24",
+            "<think>\n\n</think>\n\nAnswer: 4 * 6 * (10 - 5) / 5 is not correct. Let's try another approach.\n10 - 6 = 4\n5 - 4 = 1\n4 * 1 * 6? No.\n\nLet's look at:\n(10 - 6) * (5 + 4 / 4)? No, only one 4.\n\nTry:\n10 + 6 + 5 + 4 = 25 (Close)\n10 * 6 / (5 - 4) = 60 (Too big)\n(10 - 4) * (6 - 5)? =",
+            "<think>\n\n</think>\n\n(10 - 4) * (6 - 5) * 4 = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 1
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 1
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 1
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 1
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 1
+            },
+            {
+                "r": 1
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            }
+        ]
+    }
+]
